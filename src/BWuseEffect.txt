@@ -45,4 +45,4 @@ API fetch calls
 
     What happens if you forget it?
 ////////////////////////////////////////////////////////////////
-        It will re-render everytime that component renders
+        It will re-run everytime that component renders
