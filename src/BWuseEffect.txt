@@ -1,0 +1,48 @@
+1: Explain in your own words:
+    What is the purpose of useEffect in React?
+////////////////////////////////////////////////////
+Updating components and pieces of the webpage
+API fetch calls
+
+
+2: List at least 3 different use cases where useEffect is helpful.
+////////////////////////////////////////////////////////
+    Timers, data fetching, updating the DOM.
+
+3 Write a small example:
+    Create a component that prints to the console when the component mounts:
+////////////////////////////////////////////////////////
+***Check components folder
+
+4 Modify the component:
+    Make it run every time the button is clicked.
+
+    Starter:
+
+    function Counter() {
+        const [count, setCount] = useState(0);
+        useEffect(() => { // ??? what belongs here? }, [count]);
+        return (
+           <>
+              <p>Count: {count}</p>
+              <button onClick={() => setCount(count + 1)}>Add</button>);
+           </>
+    }
+
+    Fill in the useEffect body with something useful:
+        log to the console
+        change page title
+        update localStorage
+        etc.
+////////////////////////////////////////////////////
+***Check Components folder
+
+
+5 Think deeper:
+    Why is an empty dependency array [] important?
+/////////////////////////////////////////////////////////////////////////////////////////////////
+        When there is an empty array, the useEffect only runs once when the page is loaded
+
+    What happens if you forget it?
+////////////////////////////////////////////////////////////////
+        It will re-render everytime that component renders
